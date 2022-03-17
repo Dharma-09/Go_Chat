@@ -4,7 +4,7 @@ import "net"
 
 type room struct{
 	name string
-	members  map[net.ddr]*client
+	members  map[net.Addr]*client
 }
 
 func(r *room) broadcaste(sender *client,msg string){
