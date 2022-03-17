@@ -3,7 +3,7 @@ package main
 import "net"
 
 type client struct{
-	conn net.ddr
+	conn net.Addr
 	nick string
 	room *room
 	commands chan<- command
